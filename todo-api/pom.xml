@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>hakanozdmr</groupId>
-    <artifactId>Tech_Career_TodoApp</artifactId>
+    <artifactId>Tech_Career_TodoAPI</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Tech_Career_TodoApp</name>
-    <description>Tech_Career_TodoApp</description>
+    <name>Tech_Career_TodoAPI</name>
+    <description>Tech_Career_TodoAPI</description>
     <properties>
         <java.version>20</java.version>
     </properties>
