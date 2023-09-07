@@ -1,0 +1,58 @@
+.btn-turk {
+    background-color: #24A2B8;
+    color: white;
+}
+
+.btn-turk:hover,
+.btn-turk:focus {
+    background-color: #24A2B8;
+    color: white;
+}
+.btn-delete {
+    background-color: #D93649;
+    color: white;
+}
+
+.btn-delete:hover,
+.btn-delete:focus {
+    background-color: #D93649;
+    color: white;
+}
+
+.input-group-text{
+    background-color: #24A2B8;
+    color: white;
+}
+.fa-pen{
+    color: #FFC62C;
+}
+.fa-trash{
+    color: #DB344D;
+}
+input[type=checkbox] {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	outline: none;
+	content: none;	
+}
+
+input[type=checkbox]:before {
+	font-family: "FontAwesome";
+    content: "\2713";
+    font-size: 15px;
+    color: transparent !important;
+    background: #fff;
+    border: 1px solid grey;
+}
+
+input[type=checkbox]:checked:before {
+    border-color: #00cc00;
+	color: #00cc00 !important;
+}
+input[type="checkbox"]:checked ~ .card-body p {
+    color: red !important;
+    text-decoration: line-through;
+}
+  
+  
