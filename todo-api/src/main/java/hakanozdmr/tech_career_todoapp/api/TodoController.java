@@ -13,6 +13,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("v1/todo")
+@CrossOrigin(origins = "http://localhost:3000")
 public class TodoController {
 
     private final TodoService todoService;
@@ -30,8 +31,8 @@ public class TodoController {
         return  ResponseEntity.ok(todoService.getAllTodosIsDoneFalse());
     }
 
-    @PostMapping()
-    public ResponseEntity<Todo> addTodo(SaveTodoDto saveTodoDto){
+    @PostMapping
+    public ResponseEntity<Todo> addTodo(@RequestBody SaveTodoDto saveTodoDto){
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(todoService.addTodo(saveTodoDto));
@@ -55,9 +56,9 @@ public class TodoController {
     public ResponseEntity<Todo> updateTodoContent(@PathVariable Long id,@RequestParam String content){
         return ResponseEntity.ok(todoService.updateTodoContent(id,content)) ;
     }
-    @PutMapping("update/updateTodoIsDoneTrue/{id}")
-    public ResponseEntity<Todo> updateTodoIsDoneTrue(@PathVariable Long id){
-        todoService.updateTodoIsDoneTrue(id);
+    @PutMapping("update/updateTodoIsDone/{id}")
+    public ResponseEntity<Todo> updateTodoIsDone(@PathVariable Long id){
+        todoService.updateTodoIsDone(id);
         return ResponseEntity.noContent().build();
     }
 }
