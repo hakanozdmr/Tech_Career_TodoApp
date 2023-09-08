@@ -29,6 +29,12 @@
 .fa-trash{
     color: #DB344D;
 }
+.fa-circle-check{
+    color: #00cc00;
+}
+.fa-circle-xmark{
+    color: #DB344D;
+}
 input[type=checkbox] {
 	-moz-appearance:none;
 	-webkit-appearance:none;
@@ -53,6 +59,10 @@ input[type=checkbox]:checked:before {
 input[type="checkbox"]:checked ~ .card-body p {
     color: red !important;
     text-decoration: line-through;
+}
+input[type="text"]:disabled{
+    background-color: white;
+    border: none;
 }
   
   
