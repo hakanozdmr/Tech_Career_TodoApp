@@ -16,7 +16,6 @@ public abstract class BaseDto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    // @CreationTimestamp
     private LocalDateTime createdDate = LocalDateTime.now();
     @UpdateTimestamp
     private LocalDateTime updatedDate;
