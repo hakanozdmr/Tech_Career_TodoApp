@@ -16,14 +16,4 @@ public interface TodoRepository extends JpaRepository<Todo,Long> {
 
     List<Todo> getTodosByIsDoneFalse();
     void deleteTodosByIsDoneTrue();
-
-    @Transactional
-    @Modifying
-    @Query("UPDATE Todo t SET t.isDone = true WHERE t.id = :id")
-    void updateTodoByIsDoneTrue(@Param("id")Long id);
-
-
-
-
-
 }

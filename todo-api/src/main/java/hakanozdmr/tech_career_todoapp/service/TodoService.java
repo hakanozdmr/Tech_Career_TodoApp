@@ -48,8 +48,12 @@ public class TodoService {
         t.setContent(content);
         return todoRepository.save(t);
     }
-    public void updateTodoIsDoneTrue(Long id){
-         todoRepository.updateTodoByIsDoneTrue(id);
+    public void updateTodoIsDone(Long id){
+        Todo todo = todoRepository.findById(id).orElse(null);
+        if (todo != null) {
+            todo.setIsDone(!todo.getIsDone());
+            todoRepository.save(todo);
+        }
     }
 
 }
