@@ -127,7 +127,7 @@ Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
 
 ## Project Description
 
-This project includes a Todo application developed using Java Spring for the backend, React for the frontend, and MySQL for the database. This application allows users to manage their tasks and provides essential functionalities such as task creation, update, deletion, and status change.
+This project includes a Todo application developed using Java Spring for the backend, React for the frontend, and PostgreSQL for the database. This application allows users to manage their tasks and provides essential functionalities such as task creation, update, deletion, and status change.
 
 ### Project Demo
 
